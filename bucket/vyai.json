@@ -1,6 +1,6 @@
 {
     "version": "v0.1.1",
-    "description": "vyai – A lightweight CLI tool to interact with the Gemini API from the terminal.",
+    "description": "vyai A lightweight CLI tool to interact with the Gemini API from the terminal.",
     "homepage": "https://github.com/vybraan/vyai",
     "license": "MIT",
     "architecture": {
