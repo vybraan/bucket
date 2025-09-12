@@ -1,0 +1,23 @@
+{
+    "version": "v0.2.1",
+    "description": "A CLI tool for managing GitHub interactions and tokens.",
+    "homepage": "https://github.com/vybraan/vygrant",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vybraan/vygrant/releases/download/$version/vygrant_Windows_x86_64.zip#/vygrant.exe",
+            "hash": "98793776c9731f1ce2f3b283d93abbbb9f93395bd200209b3af4dc77810b8f8d"
+        }
+    },
+    "bin": "vygrant.exe",
+    "checkver": {
+        "github": "https://github.com/vybraan/vygrant"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vybraan/vygrant/releases/download/$version/vygrant_Windows_x86_64.zip#/vygrant.exe"
+            }
+        }
+    }
+}
