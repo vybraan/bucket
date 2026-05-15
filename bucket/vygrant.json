@@ -1,12 +1,20 @@
 {
-    "version": "v0.2.1",
-    "description": "A CLI tool for managing GitHub interactions and tokens.",
+    "version": "0.6.4",
+    "description": "vygrant - A CLI tool for OAuth token management with a local daemon.",
     "homepage": "https://github.com/vybraan/vygrant",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vybraan/vygrant/releases/download/$version/vygrant_Windows_x86_64.zip#/vygrant.exe",
-            "hash": "98793776c9731f1ce2f3b283d93abbbb9f93395bd200209b3af4dc77810b8f8d"
+            "url": "https://github.com/vybraan/vygrant/releases/download/v0.6.4/vygrant_Windows_x86_64.zip",
+            "hash": "d53aeb094381e71c6995a948ac65a173b31fe7997c6bf59b66b318b89a257a31"
+        },
+        "32bit": {
+            "url": "https://github.com/vybraan/vygrant/releases/download/v0.6.4/vygrant_Windows_i386.zip",
+            "hash": "f6deb6c38533d1e9ec9beca7c68309cc729a21a829b99853bdf3af94fde26f0f"
+        },
+        "arm64": {
+            "url": "https://github.com/vybraan/vygrant/releases/download/v0.6.4/vygrant_Windows_arm64.zip",
+            "hash": "cdcf3929a6014314283923152fc11fb70265b8820cc662cd032da836c71a56c3"
         }
     },
     "bin": "vygrant.exe",
@@ -16,8 +24,18 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/vybraan/vygrant/releases/download/$version/vygrant_Windows_x86_64.zip#/vygrant.exe"
+                "url": "https://github.com/vybraan/vygrant/releases/download/v$version/vygrant_Windows_x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/vybraan/vygrant/releases/download/v$version/vygrant_Windows_i386.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/vybraan/vygrant/releases/download/v$version/vygrant_Windows_arm64.zip"
             }
+        },
+        "hash": {
+            "url": "https://github.com/vybraan/vygrant/releases/download/v$version/vygrant_$version_checksums.txt",
+            "regex": "$sha256\\s+$basename"
         }
     }
 }
